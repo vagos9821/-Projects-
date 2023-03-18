@@ -1,0 +1,19 @@
+/* index.css */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+* {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: SeaGreen;
+}
+
+p,
+li {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}

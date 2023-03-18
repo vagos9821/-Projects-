@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./resources/javascript/script.js"></script>
+    <title>Accounting</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="headIn">Income</h2>
+        <div class="income">
+            <input type="text" value="" id="d-income" placeholder="Daily Income" onblur="dIncome()">
+            <input type="text" value="" id="w-income" placeholder="Weekly Income" onblur="wIncome()">
+            <input type="text" value="" id="m-income" placeholder="Monthly income" onblur="mIncome()">
+        </div>
+        <h2 class="headOut">Outcome</h2>
+        <div class="outcome">
+            <input type="text" value="" id="d-outcome" placeholder="Daily outcome" onblur="dOutcome()">
+            <input type="text" value="" id="w-outcome" placeholder="Weekly outcome" onblur="wOutcome()">
+            <input type="text" value="" id="m-outcome" placeholder="Monthly outcome" onblur="mOutcome()">
+        </div>
+        <h2 class="headTot">Total</h2>
+        <div class="total">
+            <input type="text" value="" id="d-total" placeholder="Daily total" onblur="dTotal()">
+            <input type="text" value="" id="w-total" placeholder="Weekly total" onblur="wTotal()">
+            <input type="text" value="" id="m-total" placeholder="Monthly total" onblur="mTotal()">
+        </div>
+        <button class="btn" onclick="reset()">Reset</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    position: absolute;
+    width: 560px;
+    height: 300px;
+    border: solid 2px black;
+    background-image: var(--gradient-16);
+}
+
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: var(--teal-6);
+    z-index: 100
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: var(--red-6);
+    z-index: 100
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: var(--blue-3);
+    z-index: 100
+}
+
+h1 {
+    z-index: 99;
+}

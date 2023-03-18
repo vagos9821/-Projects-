@@ -1,0 +1,163 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* CSS */
+
+
+/* Typography and Position */
+
+h1 {
+    font-size: var(--font-size-8);
+    font-weight: var(--font-weight-9);
+    position: sticky;
+    transform: scale(1.2);
+    height: 70px;
+    width: 70px;
+    background-color: var(--gray-4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    mix-blend-mode: lighten;
+    opacity: .5;
+}
+
+span {
+    color: var(--gray-9)
+}
+
+h2 {
+    font-size: var(--font-size-6);
+    font-weight: var(--font-weight-9);
+    position: absolute;
+    top: 10px
+}
+
+h5 {
+    color: var(--teal-3);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-4);
+    position: relative;
+    top: 50px;
+    text-align: center;
+    padding: 1em;
+    border: var(--border-size-2) solid var(--teal-6);
+    background-color: var(--gray-8);
+    box-shadow: var(--shadow-6);
+    opacity: .3;
+    transition: transform .5s linear, opacity .5s linear;
+}
+
+
+/* Centering and Style */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: var(--gradient-3), var(--noise-2);
+    background-size: cover;
+}
+
+.magic {
+    height: 200px;
+    width: 200px;
+    background-image: var(--gradient-8);
+    border-radius: 100%;
+    border: var(--border-size-4) solid var(--gray-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+#magic {
+    box-shadow: var(--shadow-5);
+}
+
+#answer {
+    text-align: center;
+    position: sticky;
+    height: 3em;
+}
+
+#question {
+    border: var(--border-size-2) solid var(--teal-6);
+    border-radius: var(--radius-4);
+    text-align: center;
+}
+
+#btn {
+    border: var(--border-size-2) solid var(--teal-6);
+    border-radius: var(--radius-4)
+}
+
+
+/* 8Ball Classes */
+
+.yes {
+    height: 200px;
+    width: 200px;
+    background-image: var(--gradient-8);
+    border-radius: 100%;
+    border: var(--border-size-4) solid var(--green-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.no {
+    height: 200px;
+    width: 200px;
+    background-image: var(--gradient-8);
+    border-radius: 100%;
+    border: var(--border-size-4) solid var(--red-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.maybe {
+    height: 200px;
+    width: 200px;
+    background-image: var(--gradient-8);
+    border-radius: 100%;
+    border: var(--border-size-4) solid var(--gray-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+
+/* Animations */
+
+
+/* @keyframes hover {
+    100% {
+        opacity: 1;
+        transform: scale(1.1)
+    }
+}
+
+@keyframes unhover {
+    100% {
+        opacity: .3;
+        transform: scale(1)
+    }
+} */
+
+h5:hover,
+h5:focus {
+    transform: scale(1.1);
+    opacity: 1;
+}

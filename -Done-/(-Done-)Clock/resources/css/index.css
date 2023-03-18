@@ -1,0 +1,118 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* CSS */
+
+.stopped {
+    background-color: var(--red-6);
+    font: 14px/26px 'Bungee', Helvetica, Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: blinkingText 1s infinite;
+}
+
+.spin {
+    border-radius: var(--radius-5);
+    border: var(--border-size-3) solid var(--gray-1);
+    color: var(--gray-1);
+    padding: 1em 2em;
+    font-size: var(--font-size-3);
+    background-color: var(--gray-9);
+    animation: spin infinite 1s linear;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes blinkingText {
+    7.5% {
+        background-color: var(--red-7);
+    }
+    15% {
+        background-color: var(--pink-7);
+    }
+    22.5% {
+        background-color: var(--grape-7);
+    }
+    30% {
+        background-color: var(--violet-1);
+    }
+    37.5% {
+        background-color: var(--indigo-7);
+    }
+    45% {
+        background-color: var(--blue-7);
+    }
+    52.5% {
+        background-color: var(--cyan-7);
+    }
+    60% {
+        background-color: var(--teal-7);
+    }
+    67.5% {
+        background-color: var(--green-7);
+    }
+    75% {
+        background-color: var(--lime-7);
+    }
+    82.5% {
+        background-color: var(--yellow-7);
+    }
+    90% {
+        background-color: var(--orange-7);
+    }
+}
+
+
+/* TYPOGRAPHY */
+
+.container {
+    font: 14px/26px 'Bungee', Helvetica, Arial
+}
+
+.title {
+    font-family: 'Bungee Shade', cursive;
+}
+
+
+/* STYLE */
+
+img {
+    height: 250px;
+    margin: 10vh;
+}
+
+.container {
+    background-color: var(--red-6);
+}
+
+
+/* BUTTON */
+
+.party {
+    border-radius: var(--radius-5);
+    border: var(--border-size-3) solid var(--gray-1);
+    color: var(--gray-1);
+    padding: 1em 2em;
+    font-size: var(--font-size-3);
+    background-color: var(--gray-9)
+}

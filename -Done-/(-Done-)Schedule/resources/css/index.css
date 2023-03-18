@@ -1,0 +1,76 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* ----- CSS ----- */
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    border: var(--border-size-3) solid var(--red-9);
+    border-radius: var(--radius-3);
+    width: max-content;
+    position: relative;
+    top: -6vh;
+    margin: 0 auto;
+    background-color: var(--gray-7);
+    box-shadow: var(--shadow-5);
+    transform: scale(.85);
+}
+
+.day {
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+    border-top: var(--border-size-3) solid var(--red-5);
+    border-bottom: var(--border-size-3) solid var(--red-5);
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-2);
+    letter-spacing: var(--font-letterspacing-4);
+}
+
+.top {
+    border-top: 0;
+}
+
+.things {
+    line-height: var(--font-lineheight-5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 5vh;
+    padding: 1vh 5vh;
+}
+
+li {
+    border-bottom: var(--border-size-1) solid var(--red-5);
+}
+
+.notes {
+    position: relative;
+    top: 5vh;
+    left: 1.5vh;
+    background-color: var(--gray-7);
+    box-shadow: var(--shadow-5);
+    padding: 2.5vh;
+    max-width: 12em;
+    height: max-content;
+    border: var(--border-size-2) solid var(--red-9);
+    border-radius: var(--radius-3);
+}
+
+.note {
+    text-align: left;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}

@@ -1,0 +1,97 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* Position */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-width: 165px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 10vh;
+}
+
+
+/* Style */
+
+body {
+    background-image: var(--gradient-7);
+}
+
+button {
+    background: none;
+    border: var(--border-size-3) solid var(--gray-1);
+    border-radius: var(--radius-2);
+    padding: var(--size-fluid-1) var(--size-fluid-4);
+    margin: var(--size-fluid-1) var(--size-fluid-1) 0 var(--size-fluid-1);
+}
+
+h1,
+h2,
+p,
+button {
+    color: var(--gray-1)
+}
+
+
+/* Typography */
+
+h1 {
+    font-size: var(--font-size-fluid-3)
+}
+
+h2 {
+    font-size: var(--font-size-fluid-1);
+    transform: scale(.75)
+}
+
+#vagos9821 {
+    font-size: var(--font-size-fluid-2);
+    color: var(--teal-3)
+}
+
+p {
+    font-size: var(--font-size-fluid-3)
+}
+
+svg {
+    height: var(--size-5);
+    width: var(--size-5);
+}
+
+
+/* Animations */
+
+button:hover {
+    animation: forwards var(--animation-scale-up);
+}
+
+button:active {
+    animation: forwards var(--animation-scale-down);
+}
+
+#button-start:active {
+    color: var(--green-4);
+    border-color: var(--green-4)
+}
+
+#button-stop:active {
+    color: var(--red-4);
+    border-color: var(--red-4)
+}
+
+#button-reset:active {
+    color: var(--gray-8);
+    border-color: var(--gray-8)
+}

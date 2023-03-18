@@ -1,0 +1,50 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* CSS */
+
+#container {
+    height: 60vw;
+    width: 60vw;
+    display: grid;
+    column-width: 7.5vw;
+    grid-template-rows: 7.5vw;
+    grid-template-areas: ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." ". . . . . . ." "a a a a a b b";
+    gap: .2em;
+    overflow: hidden;
+    position: absolute;
+    top: 2%;
+    left: 20vw
+}
+
+#wordTitle {
+    grid-area: a;
+    align-self: center;
+    max-width: 5.6em;
+    height: 3em;
+}
+
+#user-word {
+    grid-area: a;
+    align-self: center;
+    max-width: 4vw;
+    height: 8vw;
+}
+
+#submit {
+    grid-area: b;
+    align-self: center;
+    width: 7vw;
+    margin: auto;
+    padding: 0
+}
+
+.used {
+    opacity: 0
+}
+
+#score {
+    color: var(--teal-5)
+}

@@ -1,0 +1,187 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* CSS */
+
+*:focus-visible {
+    outline: none;
+}
+
+.container {
+    height: 50vh;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* GRID */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column dense;
+    grid-template-areas: ". headIn ." "income income income" ". headOut ." "outcome outcome outcome" ". headTot ." "total total total" ". btn .";
+}
+
+.headIn {
+    grid-area: headIn;
+}
+
+.income {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "d-income w-income m-income";
+    grid-area: income;
+}
+
+.d-income {
+    grid-area: d-income;
+}
+
+.w-income {
+    grid-area: w-income;
+}
+
+.m-income {
+    grid-area: m-income;
+}
+
+.headOut {
+    grid-area: headOut;
+}
+
+.outcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "d-outcome w-outcome m-outcome";
+    grid-area: outcome;
+}
+
+.d-outcome {
+    grid-area: d-outcome;
+}
+
+.w-outcome {
+    grid-area: w-outcome;
+}
+
+.m-outcome {
+    grid-area: m-outcome;
+}
+
+.headTot {
+    grid-area: headTot;
+}
+
+.total {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "d-total w-total m-total";
+    grid-area: total;
+}
+
+.d-total {
+    grid-area: d-total;
+}
+
+.w-total {
+    grid-area: w-total;
+}
+
+.m-total {
+    grid-area: m-total;
+}
+
+.btn {
+    grid-area: btn;
+}
+
+
+/* STYLE */
+
+h2 {
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.headIn {
+    color: var(--green-7)
+}
+
+.headOut {
+    color: var(--red-7)
+}
+
+.headTot {
+    color: var(--blue-7)
+}
+
+input {
+    text-align: center;
+    border: var(--border-size-2) solid var(--gray-8);
+}
+
+#d-outcome,
+#w-outcome,
+#m-outcome,
+#d-outcome::placeholder,
+#w-outcome::placeholder,
+#m-outcome::placeholder {
+    opacity: 1;
+    background-color: transparent;
+    text-align: center;
+    color: var(--red-4);
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-size-4);
+    width: 33vw;
+}
+
+#d-income,
+#w-income,
+#m-income,
+#d-income::placeholder,
+#w-income::placeholder,
+#m-income::placeholder {
+    opacity: 1;
+    background-color: transparent;
+    text-align: center;
+    color: var(--green-3);
+    font-weight: var(--font-weight-7);
+    font-size: var(--font-size-4);
+    width: 33vw;
+}
+
+#d-total,
+#w-total,
+#m-total,
+#d-total::placeholder,
+#w-total::placeholder,
+#m-total::placeholder {
+    opacity: 1;
+    background-color: transparent;
+    text-align: center;
+    color: var(--blue-3);
+    font-weight: var(--font-weight-9);
+    font-size: var(--font-size-5);
+    width: 33vw;
+}
+
+.btn {
+    margin-top: 5vh;
+    width: 100px;
+    justify-self: center;
+}

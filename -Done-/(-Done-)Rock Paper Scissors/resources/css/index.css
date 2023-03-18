@@ -1,0 +1,115 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* CSS */
+
+
+/* Grid */
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 20vh);
+    grid-template-columns: repeat(1, .5fr)repeat(1, 1fr)repeat(1, .5fr);
+    gap: 1em;
+}
+
+.cc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.uc {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.result {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.buttons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+
+/* Positioning */
+
+h2 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin: auto;
+    text-align: left;
+    width: 100%;
+    justify-content: center;
+}
+
+h2 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Style */
+
+#Rock {
+    height: 5em;
+    width: 5em;
+    border-radius: var(--radius-blob-1);
+    background-image: var(--gradient-1);
+    color: var(--gray-9);
+}
+
+#Paper {
+    height: 5em;
+    width: 5em;
+    border-radius: var(--radius-blob-2);
+    background-image: var(--gradient-3);
+    color: var(--gray-9);
+}
+
+#Scissors {
+    height: 5em;
+    width: 5em;
+    border-radius: var(--radius-blob-3);
+    background-image: var(--gradient-12);
+    color: var(--gray-9);
+}
+
+button {
+    box-shadow: var(--shadow-4);
+}
+
+
+/* Typography */
+
+button {
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-7);
+}
+
+
+/* Animations */
+
+button:hover {
+    animation: var(--animation-pulse);
+}

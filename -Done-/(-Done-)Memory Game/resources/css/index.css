@@ -1,0 +1,52 @@
+/* index.css */
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* CSS */
+
+body {
+    overflow: hidden;
+    background-color: var(--gray-2);
+}
+
+.container {
+    height: clamp(330px, 5vw, 330px);
+    width: clamp(430px, 5vw, 430px);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin: auto;
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+    color: var(--gray-8);
+    padding: 1em;
+}
+
+#score {
+    color: var(--green-5)
+}
+
+img {
+    height: clamp(100px, 1vw, 100px);
+    width: clamp(100px, 1vw, 100px);
+    border: var(--border-size-2) solid black;
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-4);
+}
+
+img:hover {
+    animation: var(--animation-pulse) forwards;
+    animation-duration: 1000ms;
+}
+
+.open,
+.one,
+.two {
+    animation: var(--animation-pulse) forwards;
+    animation-duration: 1000ms;
+}
